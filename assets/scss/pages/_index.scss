@@ -9,8 +9,9 @@ body {
 }
 .wrap{
   margin: 0 auto;
-  width: 1920px;
   line-height: 1.5;
+  max-width: 1320px;
+  margin: 0 auto;
 }
 img{
   display: block;
@@ -71,12 +72,13 @@ h3{
 footer{
   margin-top: 148px;
   background: black;
-  padding: 64px;
+  padding: 64px 0;
   text-align: center;}
 
 footer ul{
   display: flex;
-  margin-left: 824px;}
+  justify-content: center;
+}
 
 footer img{
   display: inline-block;

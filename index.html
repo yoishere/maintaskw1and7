@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- 把這個官網給的V2版註解掉，因為外掛的CSS大多都是配合3.0版本的，
+         但是，如果沒有要用特別的動畫，都還是以AOS為主，不然還要改第三方套件
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <!-- 以上CSS外部資源插入會放前面 -->
     
     <title>Maintaskw1+7</title>
@@ -21,54 +28,57 @@
       </header>
     <div class="banner">
         <div class="border">
-        <p>I'm Vito, a UI Designer with 5+ years of experience. I create visually appealing interfaces for web and mobile apps. Proficient in Sketch, Adobe XD, Figma, HTML, CSS, and JavaScript. I enjoy collaborating with others to create high-quality products.</p>
+        <p class="animate__animated animate__headShake">I'm Vito, a UI Designer with 5+ years of experience. I create visually appealing interfaces for web and mobile apps. Proficient in Sketch, Adobe XD, Figma, HTML, CSS, and JavaScript. I enjoy collaborating with others to create high-quality products.</p>
           </div>
       </div>
       <div class="details">
         <div class="border"> 
-          <ul class="w636">
-            <li data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine">
-              <h3>Vito Evans</h3>
-              <ul>
-                <li>456 Walnut Avenue, Someville, USA</li>
-                <li><a href="tel:+1 123 456 7890">+1 123 456 7890</a></li>
-                <li><a href="mailto:info@hexschool.com">info@hexschool.com</a></li>
-                <li><a href="">www.infohexschool.com</a></li>
-              </ul>
-            </li>
-            <li data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine">
-              <h3>Education</h3>
-              <ul>
-                <li><span>2014-2018</span><br>Bachelor of Science in Business Administration, University of California, Los Angeles</li>
-                <li><span>2012-2014</span><br>Associate of Arts in Graphic Design, San Francisco State University</li>
-                <li><span>2008-2012</span><br>High School Diploma, Lincoln High School</li>
-              </ul>
-            </li>
-            <li data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine">
-              <h3>Work</h3>
-              <ul>
-                <li><span>2018-2021</span><br>Marketing Manager, ABC Company</li>
-                <li><span>2016-2018</span><br>Sales Associate, XYZ Corporation</li>
-                <li><span>2014-2016</span><br>Customer Service Representative, QRS Inc.</li>
-              </ul>
-            </li>
-            <li data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine">
-              <h3>Awards</h3>
-              <ul>
-                <li>Best in Show Award, National Advertising Awards, 2020</li>
-                <li>Honorable Mention, International Design Competition, 2019</li>
-                <li>People's Choice Award, Local Art Exhibition, 2018</li>
-              </ul>
-            </li>
-          </ul>
+          <div class="over-flow-hidden">
+            <!-- 為了不要讓左右移動的AOS產生X軸，要用這個包住，而不是直接加在ul或是特效那一層 -->
+            <ul class="w636">
+              <li data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine">
+                <h3>Vito Evans</h3>
+                <ul>
+                  <li>456 Walnut Avenue, Someville, USA</li>
+                  <li><a href="tel:+1 123 456 7890">+1 123 456 7890</a></li>
+                  <li><a href="mailto:info@hexschool.com">info@hexschool.com</a></li>
+                  <li><a href="">www.infohexschool.com</a></li>
+                </ul>
+              </li>
+              <li data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine">
+                <h3>Education</h3>
+                <ul>
+                  <li><span>2014-2018</span><br>Bachelor of Science in Business Administration, University of California, Los Angeles</li>
+                  <li><span>2012-2014</span><br>Associate of Arts in Graphic Design, San Francisco State University</li>
+                  <li><span>2008-2012</span><br>High School Diploma, Lincoln High School</li>
+                </ul>
+              </li>
+              <li data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine">
+                <h3>Work</h3>
+                <ul>
+                  <li><span>2018-2021</span><br>Marketing Manager, ABC Company</li>
+                  <li><span>2016-2018</span><br>Sales Associate, XYZ Corporation</li>
+                  <li><span>2014-2016</span><br>Customer Service Representative, QRS Inc.</li>
+                </ul>
+              </li>
+              <li data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine">
+                <h3>Awards</h3>
+                <ul>
+                  <li>Best in Show Award, National Advertising Awards, 2020</li>
+                  <li>Honorable Mention, International Design Competition, 2019</li>
+                  <li>People's Choice Award, Local Art Exhibition, 2018</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
           
         </div>
       </div>
@@ -83,7 +93,9 @@
         </ul>
       </footer>
     </div>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--這邊記得也要註解掉2.0的版本!! 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="../main.js"></script>
   </body>
 </html>

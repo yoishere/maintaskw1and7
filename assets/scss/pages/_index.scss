@@ -1,86 +1,94 @@
-@import url('https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&display=swap");
 
+[data-aos="animate__headShake"].aos-animate {
+  // headShake 動畫為 Animate.css 提供
+  animation: headShake 1s;
+}
 
-*,*::before,*::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 body {
   font-family: Castoro;
 }
-.wrap{
+.wrap {
   margin: 0 auto;
   line-height: 1.5;
   max-width: 1320px;
   margin: 0 auto;
 }
-img{
+img {
   display: block;
 }
-a{
-  color:black;
+a {
+  color: black;
   text-decoration: none;
 }
-a:hover{
+a:hover {
   color: blue;
   font-size: 1.2em;
 }
-.border{
+.border {
   margin: 0 auto;
   width: 1296px;
 }
-h1,h2{
-  letter-spacing:.12em;
+h1,
+h2 {
+  letter-spacing: 0.12em;
   font-size: 128px;
-  }
-h1{
+}
+h1 {
   padding-top: 160px;
 }
-h2{
+h2 {
   text-align: right;
 }
-header img{
+header img {
   margin: 0 auto;
 }
-.banner{
-  background: #EFEFEF;
+.banner {
+  background: #efefef;
   margin-bottom: 52px;
 }
-.banner p{
+.banner p {
   font-size: 32px;
   padding: 48px 0px;
   padding-left: 650px;
 }
-.w636{
+.w636 {
   width: 636px;
 }
-.w636 li{
-  font-size: 24px;  
+.w636 li {
+  font-size: 24px;
   padding-bottom: 12px;
 }
-.w636 span{
-  color:grey;
+.w636 span {
+  color: grey;
   font-size: 20px;
   font-style: Italic;
-  }
-h3{
-  color: #AE0000;
-  border-bottom: 3px solid #AE0000;
+}
+h3 {
+  color: #ae0000;
+  border-bottom: 3px solid #ae0000;
   font-size: 40px;
   margin-top: 28px;
   margin-bottom: 13px;
 }
-footer{
+footer {
   margin-top: 148px;
   background: black;
   padding: 64px 0;
-  text-align: center;}
+  text-align: center;
+}
 
-footer ul{
+footer ul {
   display: flex;
   justify-content: center;
 }
 
-footer img{
+footer img {
   display: inline-block;
   margin-right: 40px;
 }
